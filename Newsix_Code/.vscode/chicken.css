@@ -1,0 +1,137 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  
+  
+  .container_lamp {
+    width: 75px;
+    height: 275px;
+    animation: bulb-swing 3s infinite ease-in-out;
+    transform-origin: top center;
+    position: fixed;
+    top: 0%;
+    left: calc(80% - (75px/2));
+    -webkit-animation: bulb-swing 3s infinite ease-in-out;
+}
+  
+  .container_lamp.paused {
+    animation-play-state: paused;
+  }
+  
+  .bulb {
+    z-index: 10;
+    display: block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    left: calc(50% - (75px/2));
+    background: #FFD700;
+    box-shadow: 5px 5px 80px gold, 5px -5px 80px gold, -5px 5px 80px gold, -5px -5px 80px gold;
+    cursor: pointer;
+  }
+  .bulb::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    background: #2f3652;
+    bottom: 100%;
+    left: calc(50% - (35px/2));
+    z-index: -1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .bulb::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 250px;
+    background: #2f3652;
+    bottom: 100%;
+    left: calc(50% - 5px);
+    z-index: -1;
+  }
+  .bulb .filaments {
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    background: #2f3652;
+    top: 2px;
+    left: 28px;
+    box-shadow: 17px 0 #2f3652;
+    opacity: 0;
+  }
+  .bulb .filaments::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 4px;
+    background: #2f3652;
+    width: 2px;
+    height: 12px;
+    display: block;
+    box-shadow: 4.5px 0 #2f3652, 9px 0 #2f3652;
+  }
+  
+  .bulb.off {
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid #2f3652;
+  }
+  
+  .filaments.off {
+    opacity: 1;
+  }
+  
+  @keyframes bulb-swing {
+    0% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
+  .floor {
+    position: fixed;
+    background:#2f3652;
+    height: 10%;
+    width: 100%;
+    bottom: 0%;
+    left: 0%;
+    opacity: 0.95;
+  }
+  .floor .shadow {
+    position: absolute;
+    background: #524c11;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: calc(50% - 25px);
+    left: calc(80% - 25px);
+    box-shadow: 20px 20px 100px gold, -20px 20px 100px gold, 20px -20px 100px gold, -20px -20px 100px gold;
+    animation: shadow-swing 3s infinite ease-in-out;
+  }
+  
+  .shadow.off {
+    background: #2f3652;
+    box-shadow: none;
+  }
+  
+  @keyframes shadow-swing {
+    0% {
+      transform: translateX(100px);
+    }
+    50% {
+      transform: translateX(-100px);
+    }
+    100% {
+      transform: translateX(100px);
+    }
+  }
