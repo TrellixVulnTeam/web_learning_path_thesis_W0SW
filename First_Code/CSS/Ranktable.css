@@ -6,17 +6,18 @@
 	background-color: #141E61;
   }
   
-  /*.table {
+  .table {
 	display: table;
 	width: 100%;
 	position: absolute;
 	height: 100%;
 	left: 75%;
-  }*/
+  }
   
   .table-cell {
 	display: table-cell;
 	vertical-align: 0;
+
   }
   
   #decoration, #decoration2, #decoration3 {
