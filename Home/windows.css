@@ -134,16 +134,16 @@
 
 @keyframes change-background {
   from {
-    background: #025982;
+    background: #ffffff;
   }
   25% {
-    background: #0278AE;
+    background: #ffffff;
   }
   50% {
-    background: #025982;
+    background: #ffffff;
   }
   to {
-    background: #025982;
+    background: #ffffff;
   }
 }
 
