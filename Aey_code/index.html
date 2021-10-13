@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Form</title>
+    <meta name="description" content="" />
+    <meta name="author" content="Tooplate" />
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        var subjectObject = {
+          "บริหารธุรกิจ": {
+            "วิชาการตลาด": [],
+            "วิชาการเงิน": [],
+            "วิชาการจัดการ": []    ,
+            "วิชาการจัดการธุรกิจระหว่างประเทศ": [],
+            "วิชาการตลาดดิจิทัล": [],
+            "วิชาการจัดการธุรกิจระหว่างประเทศ (มุ่งเน้นธุรกิจจีน)": []  ,
+            "วิชาการวางแผนการเงินและการลงทุน": [],
+            "วิชาการจัดการโลจิสติกส์และโซ่อุปทาน": []
+          },
+          "เทคโนโลยีสารสนเทศและนวัตกรรม": {
+            "วิทยาการคอมพิวเตอร์ มุ่งเน้นวิทยาการข้อมูลและความมั่นคงปลอดภัยไซเบอร์": [],
+            "วิชาวิทยาการคอมพิวเตอร์": [],
+            "วิชาเทคโนโลยีสารสนเทศ": [],
+            "วิชาเกมและสื่อเชิงโต้ตอบ": []
+          },
+          "วิศวกรรมศาสตร์": {
+            "วิชาวิศวกรรมปัญญาประดิษฐ์และวิทยาการข้อมูล": [],
+            "วิชาวิศวกรรมไฟฟ้า": [],
+            "วิชาวิศวกรรมคอมพิวเตอร์และหุ่นยนต์": [],
+            "วิชาวิศวกรรมมัลติมีเดียและเอนเตอร์เทนเมนต์": []
+            }
+        }
+        window.onload = function() {
+          var subjectSel = document.getElementById("subject");
+          var topicSel = document.getElementById("topic");
+          for (var x in subjectObject) {
+            subjectSel.options[subjectSel.options.length] = new Option(x, x);
+          }
+          subjectSel.onchange = function() {
+            //empty Chapters- and Topics- dropdowns
+            topicSel.length = 1;
+            //display correct values
+            for (var y in subjectObject[this.value]) {
+              topicSel.options[topicSel.options.length] = new Option(y, y);
+            }
+          }
+        }
+        </script>
+  </head>
+  <body>
+<div class="container rounded bg-white mt-5 mb-5">
+    <div class="row">
+      
+        <div class="col-md-1 border-right">
+        </div>
+        <div class="col-md-10 border-right">
+            <div class="p-3 py-5">
+              <div><img class="rounded-circle mt-1" width="150px" height="150px" src="https://pbs.twimg.com/media/EqLVfUiXYAIO7xy.jpg">
+                <br><br></bt><div class="d-flex justify-content-between align-items-center mb-3">
+                <h6 class="text-right">ข้อมูลผู้ติดต่อ</h6>
+                </div>
+                <div class="col-md-4"><label class="labels">ชื่อ</label><input type="text" class="form-control" value="" placeholder="">
+                <label class="labels" >นามสกุล</label><input type="text" class="form-control" value="" placeholder=""></div>
+                <div class="col-md-6"><label class="labels">เพศ</label><br>
+                  <input type="radio" name="sex" value=""> ชาย 
+                  <input type="radio" name="sex" value=""> หญิง 
+                </div>
+                <div>
+                  คณะ : <select name="subject" id="subject" >
+                      <option value="" selected="selected">Select Faculty</option>
+                    </select> สาขา : <select name="topic" id="topic">
+                      <option value="" selected="selected">Please select Offset</option>
+                    </select>
+                    <br>
+                  </div>
+                  <div class="col-md-4"><label class="labels">Email</label><input type="text" class="form-control" value="" placeholder="">
+                    </div>
+                    <div class="col-md-3"><label class="labels" >ที่อยู่</label><textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                </div>     
+                <div>
+                    <div class="col-md-6"><label class="labels">ความพึงพอใจในการใช้งานโปรแกรม</label><br>
+                        <input type="radio" name="sex" value=""> 5 
+                        <input type="radio" name="sex" value=""> 4 
+                        <input type="radio" name="sex" value=""> 3 
+                        <input type="radio" name="sex" value=""> 2 
+                        <input type="radio" name="sex" value=""> 1 
+                    </div>
+                    <div class="col-md-6"><label class="labels">ขอเสนอแนะเพิ่มเติม</label><textarea id="w3review" name="w3review" rows="4" cols="50"></textarea></div>
+                </div>
+                <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
+            </div>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+</div>
+</body>
+</html>
