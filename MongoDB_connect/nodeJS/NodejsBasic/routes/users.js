@@ -1,19 +1,31 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('THIS IS USERS');
-});
-
-module.exports = router;
-
-
-var mongo = require('mongodb'); //เรียก module mobogodb
-
+//var mongo = require('mongodb'); //เรียก module mobogodb
 var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb://localhost:27017/mydatabase";
 
+/* GET users listing. */
+router.get('/', function(req, res, next) {
+  //res.send('THIS IS USERS');
+
+  MongoClient.connect(url, function(err, db) {
+    if (err) throw err;
+    var dbo = db.db("mydatabase");
+  // var query = { address: "Park Lane 39" };
+    var query = ({address: "Highway 39" });
+    dbo.collection("customers").find(query).toArray(function(err, result) {
+      if (err) throw err;
+      //console.log(result);
+      res.send(result);
+      db.close();
+    });
+  });
+
+});
+
+module.exports = router;
+/*
 MongoClient.connect(url, function(err, db) {
     if (err) throw err;
     var dbo = db.db("mydatabase");
@@ -26,7 +38,7 @@ MongoClient.connect(url, function(err, db) {
     });
   });
   
-
+*/
   //var query = { name: "ถึงจาก google ที่ user login" };
   //.sort(mysort) ใช้เวลาจัด ranking
   //.limit(5) เลือกแค่ 5 อันดับ

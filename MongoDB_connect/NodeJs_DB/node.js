@@ -38,8 +38,10 @@ MongoClient.connect(url, function(err, db) {
     var query = ({address: "Highway 39" });
     dbo.collection("customers").find(query).toArray(function(err, result) {
       if (err) throw err;
+      res.writeHead(200,{'Content-Type';'text/plaint'})
       console.log(result);
       db.close();
     });
   });
-  
+
+
