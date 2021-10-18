@@ -13,8 +13,7 @@ router.get('/', function(req, res, next) {
     if (err) throw err;
     var dbo = db.db("mydatabase");
   // var query = { address: "Park Lane 39" };
-    var query = ({address: "Highway 39" });
-    dbo.collection("customers").find(query).toArray(function(err, result) {
+    dbo.collection("customers").find().toArray(function(err, result) {
       if (err) throw err;
       //console.log(result);
       res.send(result);
