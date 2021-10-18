@@ -1,6 +1,12 @@
+@media only screen and (max-width: 480px) {
+	.site-title {
+		font-size: 25px;
+	}
+}
+
 body {
   font-family: "Raleway", sans-serif;
-  background-color: #484d4c;
+  background-color: #00000042;
 }
 
 .container {
@@ -10,10 +16,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  background: rgba(255, 255, 255, 0.5);
+  background: rgb(127, 224, 164);
   padding: 20px;
   border: 1px solid #fff;
-  box-shadow: 0 0 8px 5px rgb(19, 4, 105);
+  box-shadow: 0 0 8px 5px rgb(0, 19, 48);
   border-radius: 20px;
 }
 
@@ -71,8 +77,8 @@ body {
 }
 
 .option:hover {
-  background: #2ecc71;
-  color: #fff;
+  background: #4822f1;
+  color: rgb(255, 255, 255);
 }
 
 .next {
