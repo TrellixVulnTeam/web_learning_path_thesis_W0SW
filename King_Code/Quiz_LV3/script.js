@@ -101,3 +101,7 @@ check.addEventListener("click", checkOrder);
 
 // Init
 createList();
+
+function refreshPage(){
+  window.location.reload();
+} 
