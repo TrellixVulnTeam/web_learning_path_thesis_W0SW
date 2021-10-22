@@ -1,58 +1,40 @@
-@media (min-width: 992px) {
-  .col-md-1-5 { width: 20%; }
-  .col-md-2-5 { width: 40%; }
-  .col-md-3-5 { width: 60%; }
-  .col-md-4-5 { width: 80%; }
-  .col-md-5-5 { width: 100%; }
-}
-
-/* Demo only, no need for this */
-
-.show-grid [class^=col-] span,
-.container-fluid .show-grid [class^=col-] {
-  display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #eee;
-  background-color: rgba(86,61,124,.15);
+.body {
   text-align: center;
-  border: 1px solid #ddd;
-  border: 1px solid rgba(86,61,124,.2);
+  text-transform: uppercase;
+  padding: 50px 0;
 }
 
-[class^=col-] {
-  margin-bottom: 30px;
-}
-body{ background-color: rgb(127, 212, 170); }
-
-.detail{
-  background-color: rgb(195, 180, 235);
-  text-align: center;
-  font-size: 30px;
-  line-height: 50rem;
-  height: 750px;
-  width: 320px;
-  border: 5px solid rgb(107, 138, 107);
-  border-radius: 20px;
-  box-shadow: 0 0 8px 3px rgb(48, 47, 47);
-  padding: 50px;
-  margin: 10px 0;
-  position:absolute;
-  left: 20%;
-  top: 10%
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 20px 0;
+  margin-right: 510%;
+  padding: 10px;
+  width: 100%;
+  min-height: 200px;
 }
 
 .editorContainer{
-  height: 310px;
-  width: 700px;
+  width: 97%;
   border: 5px solid rgb(107, 138, 107);
   box-shadow: 0 0 8px 3px rgb(48, 47, 47);
   border-radius: 5px;
-  position:absolute;
-  top: 12%;
-  left: 40%;
+  margin: 20px 0;
 }
 
+.detail{
+  background-color: rgb(197, 196, 196);
+  text-align: center;
+  font-size: 30px;
+  line-height: 20rem;
+  min-height: 700px;
+  width: 90%;
+  border: 5px solid rgb(107, 138, 107);
+  border-radius: 20px;
+  padding: 10px 0 10px 15px;
+  margin: 5px 0;
+}
 
 .button {
   background-color: #027faa;
@@ -65,15 +47,12 @@ body{ background-color: rgb(127, 212, 170); }
   display: inline-block;
   font-size: 20px;
   font-weight: 700;
-  width: 225px;
-  height: 15rem;
+  width: 32%;
+  height: 10rem;
   line-height: 10rem;
   padding: 0 2rem;
   text-transform: uppercase;
   outline: none;
-  position:relative;
-  top: 400px;
-  left: 770px;
 }
 
 .button.button--primary {
@@ -144,10 +123,6 @@ body{ background-color: rgb(127, 212, 170); }
   border-radius: 20px;
   box-shadow: 0 0 8px 3px rgb(48, 47, 47);
   padding: 50px;
-  margin: 20px;
-  position:absolute;
-  left: 39%;
-  top: 69%;
 }
 
 .run{
@@ -160,15 +135,9 @@ body{ background-color: rgb(127, 212, 170); }
   cursor: pointer;
   display: inline-block;
   font-size: 20px;
-  font-weight: 700;
-  width: 200px;
-  height: 10rem;
+  width: 50%;
   line-height: 10rem;
   padding: 0 2rem;
   text-transform: uppercase;
   outline: none;
-  position:relative;
-  top: 590px;
-  left: 600px;
-
 }
