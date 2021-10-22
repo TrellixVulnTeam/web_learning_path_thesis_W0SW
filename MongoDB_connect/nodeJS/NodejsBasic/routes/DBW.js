@@ -23,7 +23,7 @@ router.get('/', function(req, res, next) {
       if (err) throw err;
       
       db.close();
-      res.render('DB_to_web', { title: "我们 Database" ,
+      res.render('DBW', { title: "我们 Database" ,
                                 name: rt.name ,
                                 id: rt._id , 
                                 Address: rt.address , 
