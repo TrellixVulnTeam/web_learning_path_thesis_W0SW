@@ -1,3 +1,18 @@
+.body {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 50px 0;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+  min-height: 200px;
+
+}
 
 .main-wrapper {
 	width: 10%;
@@ -13,6 +28,7 @@
 	display: inline-block;
 	top: 0;
 	transition: all 0.2s ease;
+	
   }
   .badge:before, .badge:after {
 	position: absolute;
