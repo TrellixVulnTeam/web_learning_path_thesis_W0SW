@@ -8,7 +8,9 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var Web_to_DB = require('./routes/web_to_DB');
+var DB_to_web = require('./routes/DB_to_web');
+var web_to_DB = require('./routes/Web_to_DB');
+
 
 var app = express();
 
@@ -26,7 +28,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/db',Web_to_DB);
+app.use('/db_web',DB_to_web);
+app.use('/web_db',web_to_DB);
 
 
 
