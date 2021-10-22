@@ -6,6 +6,10 @@ var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb://localhost:27017/mydatabase";
 
 /* GET users listing. */
+router.post('/',function(req,res,next){
+  var ID = req.body.id;
+  console.log(ID);
+});
 
 router.get('/', function(req, res, next) {
   MongoClient.connect(url, function(err, db) {

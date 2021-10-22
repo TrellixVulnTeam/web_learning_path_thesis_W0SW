@@ -10,6 +10,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var DB_to_web = require('./routes/DB_to_web');
 var web_to_DB = require('./routes/Web_to_DB');
+var DBW = require('./routes/DBW');
 
 
 var app = express();
@@ -30,6 +31,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/db_web',DB_to_web);
 app.use('/web_db',web_to_DB);
+app.use('/find',DBW);
 
 
 

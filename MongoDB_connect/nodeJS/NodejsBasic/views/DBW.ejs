@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DB to Web <%= title %></title>
+    <title>DBW <%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+
     <%- include header %>
 
     <div class ="container">
+      <form action="/web_db" method="post">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" value=""><br><br> 
+        <input type="submit" value="Submit" class="btn btn-primary">
+        <br><br>
+      </form>
 
       <h1>Title : <%= title %></h1>
       <h1>name : <%= name  %></h1>
@@ -17,8 +24,7 @@
 
       <img src= "<%= Picture  %>"   alt="logo" style="width:20%;" >
 
-
-      
       <%- include footer %>
+      
   </body>
 </html>
