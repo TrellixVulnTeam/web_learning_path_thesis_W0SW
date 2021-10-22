@@ -12,25 +12,26 @@ router.get('/', function(req, res, next) {
                             });  
 });
 
-router.post('/db',function(req,res,next){
-    var fistname = req.body.fname;
-    var lasttname = req.body.lname;
-    var comment = req.body.comment;
-    console.log(fistname);
-    console.log(lasttname);
-    console.log(comment);
+router.post('/',function(req,res,next){
+  var fistname = req.body.fname;
+  var lasttname = req.body.lname;
+  var adrrs = req.body.addr;
+  console.log(fistname);
+  console.log(lasttname);
+  console.log(adrrs);
 
-    MongoClient.connect(url, function(err, db) {
-        if (err) throw err;
-        var dbo = db.db("mydatabase");
-        var myobj = { name:fname+lname,address:comment,email:"exxamls@mail.com",pic:"https://media4.giphy.com/media/3o6wrvdHFbwBrUFenu/200.gif"};
-        dbo.collection("customers").insertOne(myobj, function(err, res) {
-          if (err) throw err;
-          console.log("\n\n1 document inserted\n\n");
-          db.close();
-        });
-      });
-
+  var myobj = {name:fistname+" "+lasttname,
+    address:adrrs};
+  MongoClient.connect(url, function(err, db) {
+  if (err) throw err;
+  var dbo = db.db("mydatabase");  
+  
+  dbo.collection("customers").insertOne(myobj, function(err, res) {
+    if (err) throw err;
+    console.log("\n\n1 document inserted\n\n");
+    db.close();
+    });
+  });
 
 });
 
