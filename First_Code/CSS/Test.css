@@ -1,3 +1,6 @@
+body {background-color: rgb(128, 128, 128);}
+
+
 .body {
   text-align: center;
   text-transform: uppercase;
@@ -154,7 +157,7 @@
   }  
   .table {
 	display: table;
-	width: 20%;
+	width: 450px;
 	position: absolute;
 	height: 100%;
   }
