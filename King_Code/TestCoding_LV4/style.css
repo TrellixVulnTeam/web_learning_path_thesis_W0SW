@@ -36,7 +36,7 @@
   margin: 5px 0;
 }
 
-.button {
+.button2 {
   background-color: #027faa;
   border: none;
   border-radius: 10px;
@@ -55,58 +55,58 @@
   outline: none;
 }
 
-.button.button--primary {
+.button2.button--primary {
   background-color: #17aa17;
 }
-.button.button--warn {
+.button2.button--warn {
   background-color: #b61b1b;
 }
-.button:hover,
-.button.button--primary:hover,
-.button.button-warn:hover {
+.button2:hover,
+.button2.button--primary:hover,
+.button2.button-warn:hover {
   background-color: #f60;
 }
-.button:focus,
-.button.button--primary:focus,
-.button.button--warn:focus {
+.button2focus,
+.button2.button--primary:focus,
+.button2.button--warn:focus {
   background-color: #f60;
 }
-.button:active,
-.button.button--primary:active,
-.button.button--warn:active {
+.button2:active,
+.button2.button--primary:active,
+.button2.button--warn:active {
   background-color: #dd5800;
 }
 
-.button.button__outline {
+.button2.button__outline {
   background-color: transparent;
   color: #027faa;
   border: 1px solid #027faa;
 }
-.button.button__outline.button.button__outline--primary {
+.button2.button__outline.button.button__outline--primary {
   border-color: #17aa17;
   color: #17aa17;
 }
-.button.button__outline.button.button__outline--warn {
+.button2.button__outline.button.button__outline--warn {
   border-color: #b61b1b;
   color: #b61b1b;
 }
-.button.button__outline:hover,
-.button.button__outline.button.button__outline--primary:hover,
-.button.button__outline.button.button__outline--warn:hover {
+.button2.button__outline:hover,
+.button2.button__outline.button.button__outline--primary:hover,
+.button2.button__outline.button.button__outline--warn:hover {
   background-color: #f60;
   border-color: #f60;
   color: #fff;
 }
-.button.button__outline:focus,
-.button.button__outline.button.button__outline--primary:focus,
-.button.button__outline.button.button__outline--warn:focus {
+.button2.button__outline:focus,
+.button2.button__outline.button.button__outline--primary:focus,
+.button2.button__outline.button.button__outline--warn:focus {
   background-color: #f60;
   border-color: #f60;
   color: #fff;
 }
-.button.button__outline:active,
-.button.button__outline.button.button__outline--primary:active,
-.button.button__outline.button.button__outline--warn:active {
+.button2.button__outline:active,
+.button2.button__outline.button.button__outline--primary:active,
+.button2.button__outline.button.button__outline--warn:active {
   background-color: #dd5800;
   border-color: #dd5800;
   color: #fff;
