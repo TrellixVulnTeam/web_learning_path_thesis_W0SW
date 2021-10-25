@@ -232,7 +232,7 @@ h1, h2, p, a, span{
 	}
 	.big-profile-picture {
 		margin: 0 auto;		
-		border: 5px solid #50597b;
+		border: 5px solid #1f253d;
 		width: 150px;
 		height: 150px;
 	}
@@ -332,7 +332,7 @@ h1, h2, p, a, span{
 				height: 360px;
 			}
 				.menu-box .titular {
-					background: #11a8ab;
+					background: #1f253d;
 				}
 				.menu-box-menu .icon {
 					display: inline-block;
@@ -344,7 +344,7 @@ h1, h2, p, a, span{
 				.menu-box-number {
 					width: 36px;
 					line-height: 22px;
-					background: #50597b;
+					background: #1f253d;
 					text-align: center;
 					border-radius: 15px;
 					position: absolute;
@@ -1177,7 +1177,7 @@ h1, h2, p, a, span{
                 
                   /* Style buttons */
                 .btn {
-                  background-color:#394264; /* Blue background */
+                  background-color:#212529; /* Blue background */
                   border: none; /* Remove borders */
                   color: white; /* White text */
                   padding: 12px 16px; /* Some padding */
