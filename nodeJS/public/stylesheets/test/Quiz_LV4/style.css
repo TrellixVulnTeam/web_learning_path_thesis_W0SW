@@ -17,7 +17,7 @@
 
 .editorContainer{
   width: 97%;
-  border: 5px solid rgb(107, 138, 107);
+  border: 5px solid grey;
   box-shadow: 0 0 8px 3px rgb(48, 47, 47);
   border-radius: 5px;
   margin: 20px 0;
@@ -30,7 +30,7 @@
   line-height: 20rem;
   min-height: 700px;
   width: 90%;
-  border: 5px solid rgb(107, 138, 107);
+  border: 5px solid grey;
   border-radius: 20px;
   padding: 10px 0 10px 15px;
   margin: 5px 0;
@@ -119,7 +119,7 @@
   height: 170px;
   width: 500px;
   line-height: 1rem;
-  border: 5px solid rgb(107, 138, 107);
+  border: 5px solid grey;
   border-radius: 20px;
   box-shadow: 0 0 8px 3px rgb(48, 47, 47);
   padding: 50px;
