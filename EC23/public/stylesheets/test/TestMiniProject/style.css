@@ -1,0 +1,115 @@
+
+.contain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(170, 168, 168);
+  margin: 20px 0;
+  padding: 10px;
+  width: 100%;
+  min-height: 600px;
+  border: 2px #ccc solid;
+  border-radius: 10;
+  color: #fff;
+  border: 5px solid grey;
+  box-shadow: 0 0 8px 3px rgb(48, 47, 47);
+  border-radius: 5px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(253, 253, 253);
+  margin: 20px 0;
+  padding: 10px;
+  width: 100%;
+  min-height: 200px;
+  border: 2px #ccc solid;
+  color: rgb(0, 0, 0);
+  border: 10px solid rgb(0, 0, 0);
+  box-shadow: 0 0 8px 3px rgb(48, 47, 47);
+  border-radius: 5px;
+}
+
+#editor {
+  margin: 0;
+  width: 95%;
+  height: 39em;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/*Compile Button CSS*/
+
+.btn{
+  margin: 4px;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.btn-sky {
+color: #fff;
+background-color: #0bacd3;
+border-bottom:2px solid #098aa9;
+position: relative;
+left: -5%;
+top: 1%;
+}
+
+.btn-sky:hover,.btn-sky.active:focus, .btn-sky:focus{
+color: #fff;
+background-color: #29b6d8;
+border-bottom:2px solid #2192ad;
+outline: none;
+}
+
+.btn-sky:active, .btn-sky.active {
+color: #fff;
+background-color: #0a97b9;
+border-top:2px solid #087994;
+outline-offset: none;
+margin-top: 2px;
+}
+
+.btn-sky.active:focus{
+color: #fff;
+background-color: #df6a78;
+border-bottom:2px solid #b25560;
+outline: none;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  outline: none;
+  outline-offset: 0px;
+}
+
+/*Compile Button CSS End*/
+
+.col-md-12.col-sm-12.codeSide {
+  background: #272822;
+  height: 40em;
+  padding-left: 21px;
+  border-radius: 10px;
+  padding-top: 7px;
+}
+
+.ace_gutter {
+  min-width: 50px;
+}
+
+.ace_scroller {
+margin-left: 5px;
+}
+
+input#compile {
+  margin-top: 5px;
+  float: right;
+}
+
+/*Language Select CSS */
+button.btn.dropdown-toggle.btn-default {
+  width: 42%;
+  margin: 4px 2px 6px 4px;
+}
