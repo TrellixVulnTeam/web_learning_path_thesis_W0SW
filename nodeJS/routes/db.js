@@ -14,9 +14,9 @@ router.get('/', function(req, res, next) {
       dbo.collection("movie").find(query).toArray(function(err, result) {
       //console.log("\n###############\n",result,"\n###############\n");
       
-        //var rt=result[1];
+        var rt=result[1];
         if (err) throw err;
-        var rt = {"name":"India"};
+        //var rt = {"name":"India"};
         db.close();
         res.render('db', { title: "我们 Database" 
                             ,name: rt.name 
