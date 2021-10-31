@@ -3,6 +3,12 @@
 }
 .mdl-card__media {
 	margin: 0;
+	border: 20px solid #c7eafd;
+  border-image: -webkit-linear-gradient(to left, #7ee8fa 0%, #eec0c6 100%);
+	border-image: -moz-linear-gradient(to left #7ee8fa 0%, #eec0c6 100%);
+	border-image: -o-linear-gradient(to left, #7ee8fa 0%, #eec0c6 100%);
+	border-image: linear-gradient(to left, #7ee8fa 0%, #eec0c6 100%);
+	border-image-slice: 1;
 }
 .mdl-card__media > img {
 	max-width: 100%;
@@ -16,3 +22,4 @@
 	margin-right: 3px;
 	margin-left: 3px;
 }
+
