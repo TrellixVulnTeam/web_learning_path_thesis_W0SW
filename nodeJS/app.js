@@ -21,6 +21,7 @@ var quiz_3iRouter = require('./routes/quiz/quiz_3');
 var quiz_4iRouter = require('./routes/quiz/quiz_4');
 var MiniProjectRouter = require('./routes/quiz/TestMiniProject');
 
+var dbRouter = require('./routes/db');
 
 
 
@@ -57,6 +58,8 @@ app.use('/LV1', quiz_1iRouter);
 app.use('/LV3', quiz_3iRouter);
 app.use('/LV4', quiz_4iRouter);
 app.use('/miniproject', MiniProjectRouter);
+
+app.use('/db', dbRouter);
 
 
 //app.use(express.static('public'));
