@@ -1,0 +1,140 @@
+	/*********************************************** HEADER ***********************************************/
+	header {
+		height: 80px;
+	}
+		.header-menu {
+			font-size: 17px;
+			line-height: 80px;
+		}
+			.header-menu li {
+				position: relative;
+        		-webkit-transform: translateZ(0); /** To avoid a flash when hover messages **/
+			}
+				.header-menu-tab {
+					padding: 0 27px;
+					display: block;
+					line-height: 74px;
+					font-size: 17px;
+					-webkit-transition: background .3s;
+					transition: background .3s;
+				}
+					.header-menu-tab:hover {
+						background: #50597b;
+						border-bottom: 4px solid #11a8ab;
+						text-decoration: none;
+					}
+					.header-menu-tab .icon {
+						padding-right: 20px;
+					}
+				.header-menu-number {
+					position: absolute;
+					line-height: 22px;
+					padding: 0 6px;
+					font-weight: 700;
+					background: #e64c65;
+					border-radius: 100%;
+					top: 15px;
+					right: 2px;
+					-webkit-transition: all .3s linear;
+					transition: all .3s linear;
+				}
+					.header-menu li:hover .header-menu-number {
+						text-decoration: none;
+						-webkit-transform: rotate(360deg);
+						transform: rotate(360deg);
+
+					}
+
+.horizontal-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.clear {
+	clear: both;
+}
+
+.scnd-font-color {
+    color: #9099b7;
+}
+
+
+.profile-picture {
+	border-radius: 100%;
+	overflow: hidden;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-ms-border-radius: 100%;
+	-o-border-radius: 100%;
+}
+	.logo-profile-picture {
+		margin: 0 auto;		
+		/*border: 1px solid #50597b;
+		*/width: 75px;
+		height: 75px;
+		/*position: absolute;
+		*/top: 5px;
+	}
+	.big-profile-picture {
+		margin: 0 auto;		
+		border: 5px solid #1f253d;
+		width: 150px;
+		height: 150px;
+	}
+	.small-profile-picture {
+		border: 2px solid #50597b;
+		width: 40px;
+		height: 40px;
+	}
+
+
+
+    /********************************* Dropdown **************************************/
+
+    .dropdown {
+        float: right;
+        overflow: visible;
+        margin: 10%;
+        transition: background .3s;
+        
+
+}
+      
+      .dropdown .dropbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font: inherit;
+        margin: 0;
+      }
+      
+      .dropdown:hover .dropbtn {
+        background-color: red;
+      }
+    
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color:#16417E;
+        width: 500%;
+        height: 10%;
+        right: 0%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+    
+      .dropdown-content .header {
+        background: red;
+        padding: 16px;
+        color: white;
+      }
+    
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
