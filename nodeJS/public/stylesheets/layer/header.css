@@ -74,6 +74,10 @@ h2 {
 	font-size: 17px;
 }
 
+h3 {
+	font-size: 30px;
+}
+
 p {
 	font-size: 15px;
 }
@@ -88,6 +92,9 @@ a {
 
 h1, h2, p, a, span{
 	color: #fff;
+}
+h3{
+	color: #000;
 }
 	.scnd-font-color {
 		color: #9099b7;
@@ -1215,11 +1222,11 @@ h1, h2, p, a, span{
 									display: flex;
 									align-items: center;
 									justify-content: center;
-									background: #aaa;
+									/*background: #aaa;*/
 									margin: 20px 0;
 									padding: 10px;
 									width: 100%;
 									min-height: 200px;
-									border: 2px #ccc solid;
+									/*border: 2px #ccc solid;*/
 									color: #fff;
 								}
