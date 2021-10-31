@@ -59,7 +59,7 @@
 }
 
 body {
-	background: #1f253d;
+	background: #50597b;
 }
 
 ul {
@@ -89,7 +89,7 @@ a {
 	}
 
 h1, h2, p, a, span{
-	color: #fff;
+	color: rgb(255, 255, 255);
 }
 	.scnd-font-color {
 		color: #9099b7;
