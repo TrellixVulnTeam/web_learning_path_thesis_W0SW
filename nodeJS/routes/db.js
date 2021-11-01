@@ -49,6 +49,9 @@ router.post('/',function(req,res){
 });
 
 
+
+var mycollection = "movie";
+
 /* query db page. */
 router.get('/', function(req, res, next) {
 
@@ -60,7 +63,9 @@ router.get('/', function(req, res, next) {
  //       console.log(result);
         db.close();
         res.render('db', 
-            { title: '你爱我吗？' 
+            {
+                title:"Web to DB"
+             ,date: '1995年6月17日出生于四川省成都市' 
             ,db_name: result.name
             ,db_age: result.age
             });
