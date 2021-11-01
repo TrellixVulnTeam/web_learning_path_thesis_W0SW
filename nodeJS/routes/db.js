@@ -16,10 +16,22 @@ router.post('/',function(req,res){
     console.log(fistname);
     console.log(lasttname);
     console.log(adrrs);
-  
+
+
+    var myobj = {name:fistname+" "+lasttname,
+    address:adrrs};
+    MongoClient.connect(url, function(err, db) {
+        if (err) throw err;
+        var dbo = db.db(mydatabase);  
+        dbo.collection(mycollection).insertOne(myobj, function(err, res) {
+            if (err) throw err;
+            console.log("\n\n1 document inserted\n\n");
+            db.close();
+        });
+    });
     //res.location('/');
     res.redirect('/db');
-
+    
 });
 
 
@@ -40,7 +52,7 @@ router.get('/', function(req, res, next) {
             });
         });
      });
-     
+
 });
 
 module.exports = router;
