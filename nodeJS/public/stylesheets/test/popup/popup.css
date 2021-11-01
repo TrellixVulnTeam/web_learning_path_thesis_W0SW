@@ -51,9 +51,6 @@
     right: 40%;
   }
   .wrapper {
-    position: absolute;
-    left: 73%;
-    top: 70%;
     display: flex;
     align-items: center;
     justify-content: center;

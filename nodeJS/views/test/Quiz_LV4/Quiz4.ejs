@@ -19,50 +19,77 @@
 </head>
 <body>
   <%- include ../../layer/header %>
-
+  <br></br>
   <div class="container">
     <div class="row">
       
       <div class="col-xs-12 col-sm-4">
         <div class="detail">
           <p>โจทย์</p>
-          sssssssssss
         </div>
       </div>
       
       
       <div class="col-xs-12 col-sm-8">
         <div id="editor"class="editorContainer"></div>
-        
-        <div class="col-xs-12 col-sm-12">
-          <div class="button-group">
-            <button class="button2">1</button>
-            <button class="button2 button--primary">2</button>
-            <button class="button2 button--warn">3</button>
-          </div>
-        
-    
-          <div class="row">
-            
-            <div class="col-xs-12 col-sm-7">
-              <div class="box">
-                <div class="result"> JS </div>
-              </div>
-            </div>
-            
-            
-            <div class="col-xs-12 col-sm-5">
 
-              <div class="box">
-                
-                <!-- POPUP-->
+
+              <div class="container">
+                <div class="col-xs-12 col-sm-10">
+                  <div class="box2">
+                    <h1>เนื้อหาที่เกี่ยวข้อง</h1>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10">
+                      <div class="box">
+                        <div class="main">
+                          
+                          <ul class="cards">
+                            <li class="cards_item">
+                              <div class="card">
+                                <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+                                <div class="card_content">
+                                  <h2 class="card_title">1</h2>
+                                  <button class="btn2 card_btn2">Read More</button>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="cards_item">
+                              <div class="card">
+                                <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
+                                <div class="card_content">
+                                  <h2 class="card_title">2</h2>
+                                  <button class="btn2 card_btn2">Read More</button>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="cards_item">
+                              <div class="card">
+                                <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div>
+                                <div class="card_content">
+                                  <h2 class="card_title">3</h2>
+                                  <button class="btn2 card_btn2">Read More</button>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                    <div class="col-xs-12 col-sm-2">
+                       <!-- POPUP-->
+                       <%- include ../popup/popup %>
+                  </div>
               
-                <%- include ../popup/popup %>
+                </div>
               </div>
-            </div>
             
-          </div>
-        </div>
+
+          
+
         </div>   
     </div>
   </div>
