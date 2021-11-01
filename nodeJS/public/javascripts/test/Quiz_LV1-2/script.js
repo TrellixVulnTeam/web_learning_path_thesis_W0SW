@@ -19,8 +19,7 @@ var questions = [
     answer: "2"
   }/*,
   {
-    question:
-      "In Disney's 'The Little Mermaid' what is the name of the human that Ariel falls in love with?",
+    question:"In Disney's 'The Little Mermaid' what is the name of the human that Ariel falls in love with?",
     option1: "King George",
     option2: "Barry White",
     option3: "Olaf The Snowman",
