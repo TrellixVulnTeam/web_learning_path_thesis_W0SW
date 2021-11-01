@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DBW <%= title %></title>
+    <title><%= title %></title>
   </head>
   <body>
     <center>
     <div class ="container" style="background-color: pink;">
       <br><br>
-      <img src="https://p2.music.126.net/X-cZXMriax_IRAkKWTOozg==/109951165575050379.jpg" alt="Trulli" width="50%" height="50%" >
+      <img src="https://p2.music.126.net/X-cZXMriax_IRAkKWTOozg==/109951165575050379.jpg" alt="Trulli" width="25%" height="25%" >
       <br><br>
     </div> 
 
@@ -15,19 +15,32 @@
       <br>
       <p>Welcome to <h2><%= db_name %></h2></p>
       <p>Age : <%= db_age %></p> 
-      <p><%= title %></p>
+      <p><%= date %></p>
       <br>
     </div>
 
     <div class ="container" style="background-color: rgb(231, 206, 210);">
       <br>
       <form action="" method="post">
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname" value=""><br><br> 
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="lname">Address:</label><br>
+        <label for="fname">ID:</label>
+        <input type="text" id="id" name="id" value=""><br><br> 
+        <label for="fname">question:</label>
+        <input type="text" id="question" name="question" value=""><br><br> 
+        <label for="fname">option1:</label>
+        <input type="text" id="option1" name="option1" value=""><br><br> 
+        <label for="fname">option2:</label>
+        <input type="text" id="option2" name="option2" value=""><br><br> 
+        <label for="lname">option3:</label>
+        <input type="text" id="option3" name="option3"><br><br>
+        <label for="lname">option4:</label>
+        <input type="text" id="option4" name="option4"><br><br>
+        <label for="lname">answer:</label>
+        <input type="text" id="answer" name="answer"><br><br>
+        
+        <!--
+        <label for="lname">answer:</label><br>
         <textarea id="addr" name="addr" class="form-control" style="width: 90%; height: 50px;resize:both "></textarea><br><br>
+        -->
         <input type="submit" value="Submit" class="btn btn-primary">
       </form>
       <br>
