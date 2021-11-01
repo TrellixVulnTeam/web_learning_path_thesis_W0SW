@@ -6,9 +6,22 @@
   </head>
   <body>
 
-      <h1>Title : <%= title %></h1>
-      <h1>name : <%= name  %></h1>
+    <div class ="container">
+      <form action="" method="post">
+        <label for="inputDB">input :</label>
+        <input type="text" id="inputDB" name="inputDB" value=""><br><br> 
+        <input type="submit" value="Submit" class="btn btn-primary">
+        <br><br>
+      </form>
+    </div>
 
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <p><%= db_name %></p>
 
-  </body>
-</html>
+    <h1> <center> 
+      <p>AGE : <%= db_age %></p> 
+    </center> </h1>
+      
+    </body>
+  </html>

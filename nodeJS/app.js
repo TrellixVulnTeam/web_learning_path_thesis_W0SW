@@ -22,7 +22,7 @@ var quiz_4iRouter = require('./routes/quiz/quiz_4');
 var MiniProjectRouter = require('./routes/quiz/TestMiniProject');
 
 var dbRouter = require('./routes/db');
-var db2Router = require('./routes/db2');
+
 
 
 /////////////////////
@@ -60,7 +60,7 @@ app.use('/LV4', quiz_4iRouter);
 app.use('/miniproject', MiniProjectRouter);
 
 app.use('/db', dbRouter);
-app.use('/db2', db2Router);
+
 
 
 //app.use(express.static('public'));
