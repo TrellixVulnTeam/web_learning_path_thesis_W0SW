@@ -5,23 +5,35 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+    <center>
+    <div class ="container" style="background-color: pink;">
+      <br><br>
+      <img src="https://p2.music.126.net/X-cZXMriax_IRAkKWTOozg==/109951165575050379.jpg" alt="Trulli" width="50%" height="50%" >
+      <br><br>
+    </div> 
 
-    <div class ="container">
-      <form action="" method="post">
-        <label for="inputDB">input :</label>
-        <input type="text" id="inputDB" name="inputDB" value=""><br><br> 
-        <input type="submit" value="Submit" class="btn btn-primary">
-        <br><br>
-      </form>
+    <div class ="container" style="background-color: rgb(240, 101, 124);">
+      <br>
+      <p>Welcome to <h2><%= db_name %></h2></p>
+      <p>Age : <%= db_age %></p> 
+      <p><%= title %></p>
+      <br>
     </div>
 
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <p><%= db_name %></p>
-
-    <h1> <center> 
-      <p>AGE : <%= db_age %></p> 
-    </center> </h1>
-      
-    </body>
-  </html>
+    <div class ="container" style="background-color: rgb(231, 206, 210);">
+      <br>
+      <form action="" method="post">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value=""><br><br> 
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="lname">Address:</label><br>
+        <textarea id="addr" name="addr" class="form-control" style="width: 90%; height: 50px;resize:both "></textarea><br><br>
+        <input type="submit" value="Submit" class="btn btn-primary">
+      </form>
+      <br>
+    </div> 
+     
+    </center>
+  </body>
+</html>

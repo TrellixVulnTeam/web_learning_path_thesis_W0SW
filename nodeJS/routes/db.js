@@ -9,11 +9,18 @@ var mycollection = "movie";
 
 
 /* get db page */
-router.post('/db',function(req,res,next){
-    var getPAGE = req.body.inputDB;
-    console.log(getPAGE);
-    next();
-    });
+router.post('/',function(req,res){
+    var fistname = req.body.fname;
+    var lasttname = req.body.lname;
+    var adrrs = req.body.addr;
+    console.log(fistname);
+    console.log(lasttname);
+    console.log(adrrs);
+  
+    //res.location('/');
+    res.redirect('/db');
+
+});
 
 
 /* query db page. */
@@ -24,9 +31,7 @@ router.get('/', function(req, res, next) {
       var dbo = db.db(mydatabase);
       dbo.collection(mycollection).findOne({}, function(err, result) {
         if (err) throw err;
-        console.log("\n\n########\n\n");
         console.log(result);
-        console.log("\n\n########\n\n");
         db.close();
         res.render('db', 
             { title: '你爱我吗？' 
@@ -35,7 +40,7 @@ router.get('/', function(req, res, next) {
             });
         });
      });
-
+     
 });
 
 module.exports = router;
