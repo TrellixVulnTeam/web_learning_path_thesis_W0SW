@@ -2,11 +2,7 @@ var express = require('express');
 var router = express.Router();
 var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb://localhost:27017/";
-
 var mydatabase = "thesisDB";
-var mycollection = "question";
-
-
 
 /* get db page */
 router.post('/',function(req,res){
@@ -33,7 +29,7 @@ router.post('/',function(req,res){
         option4: opt4,
         answer: ans
     };
-
+    var mycollection = "questions";
     MongoClient.connect(url, function(err, db) {
         if (err) throw err;
         var dbo = db.db(mydatabase);  
@@ -45,7 +41,6 @@ router.post('/',function(req,res){
     });
     //res.location('/');
     res.redirect('/db');
-
 });
 
 

@@ -1,6 +1,7 @@
 // Questions for the quiz app
-var questions = [
-  {
+ var questions = [
+  
+ {
     question:
       "Which American inventor is generally given credit for the invention of the lightning rod?",
     option1: "Nikola Tesla",
@@ -17,7 +18,7 @@ var questions = [
     option3: "Submarine",
     option4: "Island",
     answer: "2"
-  }/*,
+  },
   {
     question:"In Disney's 'The Little Mermaid' what is the name of the human that Ariel falls in love with?",
     option1: "King George",
@@ -86,7 +87,7 @@ var questions = [
     option3: "Mars",
     option4: "Mercury",
     answer: "1"
-  }*/
+  }
 ];
 
 // Script to run game
@@ -143,5 +144,6 @@ function loadNextQuestion() {
   }
   loadQuestion(currentQuestion);
 }
+
 
 loadQuestion(currentQuestion);
