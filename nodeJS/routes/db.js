@@ -14,8 +14,14 @@ router.post('/',function(req,res){
     var opt4 = req.body.option4;
     var ans = req.body.answer;
 
+   console.log("\n\n############### INSERT ###########\n\n");
    console.log(q);
    console.log(opt1);
+   console.log(opt2);
+   console.log(opt3);
+   console.log(opt4);
+   console.log(ans);
+   
 //   console.log(adrrs);
 //   console.log(id);
 
@@ -51,18 +57,23 @@ var mycollection = "movie";
 router.get('/', function(req, res, next) {
 
   MongoClient.connect(url, function(err, db) {
-      if (err) throw err;
-      var dbo = db.db(mydatabase);
-      dbo.collection(mycollection).findOne({}, function(err, result) {
+    if (err) throw err;
+    var dbo = db.db(mydatabase);
+    var query = { name:/.*m*/};
+    dbo.collection(mycollection).find(query).toArray(function(err, result) {
         if (err) throw err;
- //       console.log(result);
+        var dataResult = result[2];
+        console.log("\n\n############### Query ###########\n\n");
+        console.log(result);
+        console.log("##########################");
         db.close();
         res.render('db', 
             {
                 title:"Web to DB"
-             ,date: '1995年6月17日出生于四川省成都市' 
-            ,db_name: result.name
-            ,db_age: result.age
+                ,db_date: dataResult.date
+                ,db_name: dataResult.name
+                ,db_age: dataResult.age
+                ,db_pic: dataResult.pic
             });
         });
      });

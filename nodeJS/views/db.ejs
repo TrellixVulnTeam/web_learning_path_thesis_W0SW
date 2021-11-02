@@ -3,6 +3,16 @@
   <head>
     <title><%= title %></title>
   </head>
+
+  <style>
+    .avatar {
+      vertical-align: middle;
+      width: 33%;
+      height: 33%;
+      border-radius: 88%;
+    }
+    </style>
+
   <body>
     <center>
     <div class ="container" style="background-color: pink;">
@@ -15,7 +25,10 @@
       <br>
       <p>Welcome to <h2><%= db_name %></h2></p>
       <p>Age : <%= db_age %></p> 
-      <p><%= date %></p>
+      <p>DATE : <%= db_date %></p> 
+      <img src='<%= db_pic %>' alt="Avatar" class="avatar" />
+      <br>
+
       <br>
     </div>
 
