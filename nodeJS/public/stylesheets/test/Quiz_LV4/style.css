@@ -17,14 +17,14 @@
 
 .editorContainer{
   min-width: 100%;
-  border: 5px solid grey;
+  border: 10px solid grey;
   box-shadow: 0 0 8px 3px rgb(48, 47, 47);
-  border-radius: 5px;
+  border-radius: 15px;
   margin: 20px 0;
 }
 
 .detail{
-  background-color: rgb(197, 196, 196);
+  background-color: white;
   text-align: center;
   font-size: 30px;
   line-height: 20rem;
@@ -49,7 +49,7 @@
 }
 
 html {
-  background-color: #ecf9ff;
+  background-color: #394264;
 }
 
 .main{
@@ -136,32 +136,17 @@ img {
   text-align: center;
 }
 
-.box2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(3, 6, 46, 0.788);
-  margin: 10px 0;
-  padding: 10px;
-  width: 100%;
-  min-height: 50px;
-  border: 10px rgb(19, 9, 61) solid;
-  border-radius: 20px;
-  color: rgb(87, 11, 11);
-}
-
-
-
 .box {
   display: flex;
   align-items: center;
   justify-content: center;  
-  background: rgba(3, 6, 46, 0.788);
+  background: white;
   margin: 20px 0;
   width: 100%;
   min-height: 200px;
-  border: 10px rgb(19, 9, 61) solid;
+  border: 5px grey solid;
   color: #fff;
+  border-radius: 20px;
 }
 
 .up {
