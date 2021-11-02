@@ -14,6 +14,7 @@ var courseRouter = require('./routes/course');
 var eLearningRouter = require('./routes/e-learning');
 var settingRouter = require('./routes/setting');
 var achievementRouter = require('./routes/achievement');
+var projectRouter = require('./routes/project');
 
 var popupRouter = require('./routes/popup');
 var quiz_1iRouter = require('./routes/quiz/quiz_1');
@@ -52,6 +53,7 @@ app.use('/course', courseRouter);
 app.use('/learn', eLearningRouter);
 app.use('/setting',settingRouter);
 app.use('/achievement',achievementRouter);
+app.use('/project', projectRouter);
 
 app.use('/popup', popupRouter);
 app.use('/LV1', quiz_1iRouter);
