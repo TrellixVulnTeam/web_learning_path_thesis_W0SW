@@ -1,6 +1,6 @@
 /** Inspired by: http://graphicburger.com/flat-design-ui-components/ **/
 /** Line-chart and donut-chart made by @kseso https://codepen.io/Kseso/pen/phiyL **/
-
+body {background-color: #6c757d;}
 
 /************************************ FONTS ************************************/
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
@@ -243,7 +243,7 @@ h4{
 	}
 	.big-profile-picture {
 		margin: 0 auto;		
-		border: 5px solid #1f253d;
+		border: 5px solid #ffffff;
 		width: 150px;
 		height: 150px;
 	}
@@ -283,7 +283,7 @@ h4{
 					transition: background .3s;
 				}
 					.header-menu-tab:hover {
-						background: #50597b;
+						background: #41464b;
 						border-bottom: 4px solid #394264;
 						text-decoration: none;
 						color: #dee2e6;
