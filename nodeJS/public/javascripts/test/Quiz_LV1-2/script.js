@@ -18,7 +18,7 @@
     option3: "Submarine",
     option4: "Island",
     answer: "2"
-  },
+  }/*,
   {
     question:"In Disney's 'The Little Mermaid' what is the name of the human that Ariel falls in love with?",
     option1: "King George",
@@ -87,7 +87,7 @@
     option3: "Mars",
     option4: "Mercury",
     answer: "1"
-  }
+  }*/
 ];
 
 // Script to run game
@@ -135,7 +135,7 @@ function loadNextQuestion() {
     resultCont.style.display = "";
     resultCont.textContent = "Your Score: " + score;
     //alert(score);
-    document.getElementById("ref-link").innerHTML ='<a href="/test/Quiz_LV3/Quiz3.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Next Level</a>';
+    document.getElementById("ref-link").innerHTML ='<a href="/lv3" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Next Level</a>';
 
     //document.getElementById("ref-pic").innerHTML ='<div class="box"><div class="title" ><img src="https://www.rollingstone.com/wp-content/uploads/2019/06/phum-Viphurit.jpg" alt="Trulli" width="100%" height="100%"># Question 1 # </div> </div>';
 
