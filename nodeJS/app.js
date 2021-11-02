@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+var favicon = require('serve-favicon');
 
 //////////////////////
 
@@ -69,7 +69,7 @@ app.use('/db', dbRouter);
 //app.use(express.static('public'));
 //app.use('/stylesheets',express.static(__dirname+'public/stylesheets'));
 
-
+app.use(favicon(path.join(__dirname,'public','images','favicon.ico')));
 
 
 // catch 404 and forward to error handler
