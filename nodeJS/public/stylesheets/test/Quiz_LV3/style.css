@@ -29,17 +29,16 @@
 }
 
 .box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #aaa;
-  margin: 20px 0;
-  padding: 10px;
-  width: 100%;
-  min-height: 500px;
-  border: 2px #ccc solid;
-  color: #fff;
-  border: 10px;
+  background-color: white;
+  text-align: center;
+  font-size: 30px;
+  line-height: 20rem;
+  min-height: 100%;
+  width: 90%;
+  border: 10px solid var(--bs-body-color);
+  border-radius: 20px;
+  padding: 10px 0 10px 15px;
+  margin: 5px 0;
 }
 
 .draggable-list {
