@@ -286,7 +286,7 @@ h4{
 						background: #50597b;
 						border-bottom: 4px solid #394264;
 						text-decoration: none;
-						color: #4CAF50;
+						color: #dee2e6;
 					}
 					.header-menu-tab .icon {
 						padding-right: 20px;
@@ -335,7 +335,7 @@ h4{
 
 		.block {
 			margin-bottom: 25px;
-			background: #394264;
+			background: #41464b;
 			border-radius: 5px;
 		}
 		/******************************************** LEFT CONTAINER *****************************************/
@@ -344,7 +344,7 @@ h4{
 				height: 360px;
 			}
 				.menu-box .titular {
-					background: #1f253d;
+					background: #212529;
 				}
 				.menu-box-menu .icon {
 					display: inline-block;
@@ -961,7 +961,7 @@ h4{
 		/********************************************* RIGHT CONTAINER ****************************************/
 		.right-container {}
 			.join-newsletter {
-				background-color: #394264;
+				background-color: #41464b;
 				height: 700px;
 				
 				/*opacity: 0.5;
