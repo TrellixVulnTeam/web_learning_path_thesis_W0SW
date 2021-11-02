@@ -6,4 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('test/TestMiniproject/main');
 });
 
+router.post('/',function(req,res){
+  console.log("get data from miniproject success!")
+  res.redirect('/project');
+});
+
 module.exports = router;
