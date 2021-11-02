@@ -133,9 +133,11 @@ function loadNextQuestion() {
   if (currentQuestion == totQuestions) {
     container.style.display = "none";
     resultCont.style.display = "";
-    resultCont.textContent = "Your Score: " + score;
+    resultCont.textContent = "Your Score:" + score;
+    document.getElementById("ref-link").innerHTML ='<center><a href="/lv3" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Next Level</a></center>';
+    
     //alert(score);
-    document.getElementById("ref-link").innerHTML ='<a href="/lv3" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Next Level</a>';
+    
 
     //document.getElementById("ref-pic").innerHTML ='<div class="box"><div class="title" ><img src="https://www.rollingstone.com/wp-content/uploads/2019/06/phum-Viphurit.jpg" alt="Trulli" width="100%" height="100%"># Question 1 # </div> </div>';
 
