@@ -16,7 +16,7 @@
 }
 
 .editorContainer{
-  width: 97%;
+  min-width: 100%;
   border: 5px solid grey;
   box-shadow: 0 0 8px 3px rgb(48, 47, 47);
   border-radius: 5px;
@@ -162,4 +162,14 @@ img {
   min-height: 200px;
   border: 10px rgb(19, 9, 61) solid;
   color: #fff;
+}
+
+.up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 10px;
+  min-height: 90%;
+
 }
