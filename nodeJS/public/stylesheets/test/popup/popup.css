@@ -15,9 +15,8 @@
     background: linear-gradient(to right, #e1e0ff, #d7fadd);
   }
   body {
-    background: #191919;
+   /* background: #191919;
     background: #394264;
-;
     /*-webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -71,7 +70,7 @@
     position: relative;
     z-index: 2;
     -webkit-appearance: none;
-    background: #1f253d;
+    background: #212529;
     outline: none;
     /*border: none;*/
     text-transform: uppercase;
