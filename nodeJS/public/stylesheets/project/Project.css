@@ -13,6 +13,7 @@
   height: 75%;
 }
 
+html,body{overflow-y: scroll; }
 
 :root {
 	--linkheight: 2rem;
