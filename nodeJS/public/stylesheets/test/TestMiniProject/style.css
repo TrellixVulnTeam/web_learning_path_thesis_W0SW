@@ -48,6 +48,13 @@ h4 {
   text-align: center;
 }
 
+.img2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
 /*Compile Button CSS*/
 
 .btn{
