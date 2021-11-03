@@ -381,12 +381,12 @@ h4{
 					transition: background .2s;
 				}
 					.menu-box-tab:hover {
-						background: #50597b;
+						background: #FFF;
 						border-top: 1px solid #1f253d;
 						text-decoration: none;
 					}
 					.menu-box-tab:hover .icon {
-						color: #fff;
+						color: #212529;
 					}
 					.menu-box-tab:hover .menu-box-number {
 						background: #e64c65;
