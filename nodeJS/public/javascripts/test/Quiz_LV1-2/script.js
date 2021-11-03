@@ -8,7 +8,7 @@
     option2: " บรรทัด 3-11",
     option3: " บรรทัด 4-11",
     option4: " บรรทัด 5-10",
-    option5: "https://drhttps://doc-0g-20-docs.googleusercontent.com/docs/securesc/vi8ju50ho6b1te4g2h30srtq9ot467rf/6gnmricmgss53d9qlv1fikkvcaiqtfvn/1635926850000/16731044945742959764/16731044945742959764/1Dm6Gf0vWmiGTiKd4SQEQ6sx-x23m-BxI?authuser=0&nonce=ldb9oan99m00e&user=16731044945742959764&hash=qgch4ta3cps4mn4g7vmtecpka1n3tbeaive.google.com/uc?id=1Dm6Gf0vWmiGTiKd4SQEQ6sx-x23m-BxI",
+    /*option5: "https://drive.google.com/uc?id=1Dm6Gf0vWmiGTiKd4SQEQ6sx-x23m-BxI",*/
     answer: "2"
   },
   {
