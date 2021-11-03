@@ -17,15 +17,36 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #394264;
+    /*background: #41464b;*/
     padding: 30px;
 }
 
+.textCon {
+    text-align: center;
+    color:#ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 30px;
+    background-color: #41464b;
+    border-radius: 5px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .25);
+}
+.imgCon {
+    position: relative;
+    max-width: 850px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #41464b;
+    border-radius: 50px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .25);
+}
 .container {
     position: relative;
     max-width: 850px;
     width: 100%;
-    background: #fff;
+    background: #41464b;
     padding: 40px 30px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     perspective: 2700px;
@@ -228,10 +249,12 @@ form .form-content .Sign-up-text {
 }
 
 .google-btn {
+    margin-left: auto;
+    margin-right: auto;
     width: 190px;
     height: 42px;
-    background-color: #4285f4;
-    border-radius: 2px;
+    background-color: #41464b;
+    border-radius: 5px;
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .25);
 }
 
@@ -241,14 +264,14 @@ form .form-content .Sign-up-text {
     margin-left: 1px;
     width: 40px;
     height: 40px;
-    border-radius: 2px;
+    border-radius: 20px;
     background-color: rgb(255, 255, 255);
 }
 
 .google-icon {
     position: absolute;
     margin-top: 11px;
-    margin-left: 11px;
+    margin-left: -8px;
     width: 18px;
     height: 18px;
 }
