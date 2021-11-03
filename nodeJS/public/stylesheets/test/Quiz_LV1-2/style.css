@@ -12,7 +12,7 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  background-color: #fff;
+  /*background-color: #fff;*/
 }
 
 .body {
@@ -25,13 +25,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #394264;
+  background:#41464b;
   margin: 60px 0;
   padding: 10px;
   width: 100%;
   height: 400px;
   min-height: 200px;
-  border: 2px #ccc solid;
+  border: 5px var(--bs-body-color ) solid;
   color: #fff;
   border-radius: 25px;
 }
@@ -63,7 +63,8 @@ body {
 .question {
   padding: 20px;
   font-size: 1.5rem;
-  background: #394264;
+  background: #41464b;
+  border: 5px var(--bs-body-color ) solid;
   border-radius: 20px;
   margin: 10px 0 10px 0;
   color: #f6f6f6;
@@ -75,23 +76,26 @@ body {
   font-size: 1rem;
   display: inline-block;
   padding: 10px 0 10px 15px;
-  background: #394264;
+  border: 5px var(--bs-body-color ) solid;
+  background: #41464b;
   margin: 10px 0 10px 10px;
   color: #000;
   border-radius: 20px;
 }
 
 .option:hover {
-  background: #6070aa;
+  background: #2125297d;
   color: #fff;
 }
 
 .next {
+  color:rgb(255, 255, 255);
   border: none;
   outline: none;
-  background: #3498db;
+  border: 5px var(--bs-body-color ) solid;
+  background: #41464b;
   width: 40%;
-  height: 35px;
+  height: 50px;
   border-radius: 10px;
   cursor: pointer;
   float: right;
@@ -100,8 +104,8 @@ body {
 }
 
 .next:hover {
-  background: #3498db;
-  color: #fff;
+  background: #2125297d;
+  color: rgb(198, 213, 236);
 }
 
 .result {
