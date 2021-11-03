@@ -76,6 +76,7 @@ h2 {
 
 h3 {
 	font-size: 30px;
+
 }
 
 p {
@@ -94,7 +95,7 @@ h1, h2, p, a, span{
 	color: #fff;
 }
 h3{
-	color: #000;
+	color: rgb(255, 255, 255);
 }
 h4{
 	color: #000;
