@@ -3,20 +3,21 @@
   
  {
     question:
-      "Which American inventor is generally given credit for the invention of the lightning rod?",
-    option1: "Nikola Tesla",
-    option2: "George Washington",
-    option3: "Benjamin Franklin",
-    option4: "Elijah McCoy",
-    option5: "https://www.rollingstone.com/wp-content/uploads/2019/06/phum-Viphurit.jpg",
-    answer: "3"
+      "คำถาม : Block ขอบเขตและควบคุมการทำงานของโปรแกรม เริ่มจากบรรทัดและจบที่บรรทัดใด",
+    option1: " บรรทัด 1-11",
+    option2: " บรรทัด 3-11",
+    option3: " บรรทัด 4-11",
+    option4: " บรรทัด 5-10",
+    option5: "https://drhttps://doc-0g-20-docs.googleusercontent.com/docs/securesc/vi8ju50ho6b1te4g2h30srtq9ot467rf/6gnmricmgss53d9qlv1fikkvcaiqtfvn/1635926850000/16731044945742959764/16731044945742959764/1Dm6Gf0vWmiGTiKd4SQEQ6sx-x23m-BxI?authuser=0&nonce=ldb9oan99m00e&user=16731044945742959764&hash=qgch4ta3cps4mn4g7vmtecpka1n3tbeaive.google.com/uc?id=1Dm6Gf0vWmiGTiKd4SQEQ6sx-x23m-BxI",
+    answer: "2"
   },
   {
-    question: "Jimmy Carter was the first U.S. president born in a what?",
-    option1: "Air Plane",
-    option2: "Hospital",
-    option3: "Submarine",
-    option4: "Island",
+    question: 
+      "คำถาม : จะให้ code บรรทัดที่ 9 ทำงานต้องแก้อย่างไร",
+    option1: "*",
+    option2: "*",
+    option3: "*",
+    option4: "*",
     answer: "2"
   }/*,
   {

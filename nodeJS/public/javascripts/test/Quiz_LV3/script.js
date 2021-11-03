@@ -2,16 +2,12 @@ const draggableList = document.getElementById("draggable-list");
 const check = document.getElementById("check");
 
 const richestPeople = [
-  "Jeff Bezos",
-  "Bill Gates",
-  "Bernard Arnault",
-  "Warren Buffett",
-  "Larry Ellison",
-  "Amancio Ortega",
-  "Mark Zuckerberg",
-  "Jim Walton",
-  "Alice Walton",
-  "S. Robson Walton"
+  "สร้างฟังก์ชั่น main",
+  "กำหนดตัวแปร int a = 3",
+  "กำหนดตัวแปร int b = 2",
+  "แสดงข้อความ Hello World!",
+  "แสดงข้อความ ผลลัพธ์จากตัวแปร a + b",
+  "จบฟังก์ชั่น",
 ];
 
 const listItems = [];
