@@ -29,14 +29,13 @@ body .middle_card_left img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 90%;
   height: auto;
 
   float:left;
 
   position: relative;
-  top: 10px;
-;
+  top: 1000%;
   left:20px;
 
 /**/
