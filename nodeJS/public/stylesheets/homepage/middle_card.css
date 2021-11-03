@@ -19,7 +19,7 @@ body .middle_card {
 }
 body .middle_card_left {
   width: 25%;
-  height:2px;
+  height:1px;
   float: left;
   /*overflow: hidden;
   background: transparent;*/
@@ -142,7 +142,7 @@ body .middle_card_right__review a {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   padding: 0 0 0 40px;
-  color: #ffda00;
+  color: #0ed15f;
   margin: 0;
 }
 body .middle_card_right__button {
@@ -150,13 +150,14 @@ body .middle_card_right__button {
   margin: 30px 0 0 0;
 }
 body .middle_card_right__button a {
-  color: #ffda00;
+  position: relative;
+  color: #FFF;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  border: 2px solid #ffda00;
+  border: 2px solid #FFF;
   padding: 10px 10px 10px 40px;
   font-size: 12px;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/COMdoWZ.png);
+  background: url(https://e7.pngegg.com/pngimages/718/254/png-clipart-cartoon-white-arrow-cartoon-white.png);
   background-size: 12px 12px;
   background-repeat: no-repeat;
   background-position: 7% 50%;
@@ -166,8 +167,9 @@ body .middle_card_right__button a {
   width: 20%;
 }
 body .middle_card_right__button a:hover {
+  border: 2px solid #2125297d;
   color: #000000;
-  background-color: #ffda00;
+  background-color: #FFF;
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/rFQ5dHA.png);
   background-size: 12px 12px;
   background-repeat: no-repeat;
