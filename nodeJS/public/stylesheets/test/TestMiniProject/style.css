@@ -1,8 +1,5 @@
 
 .contain {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: rgb(170, 168, 168);
   margin: 20px 0;
   padding: 10px;
@@ -38,6 +35,17 @@
   height: 39em;
   margin-top: 5px;
   font-size: 14px;
+}
+h4 {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.textcenter{
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
 }
 
 /*Compile Button CSS*/

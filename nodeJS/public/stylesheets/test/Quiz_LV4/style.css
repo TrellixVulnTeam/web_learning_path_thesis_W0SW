@@ -63,10 +63,30 @@ h1 {
     text-align: center;
 }
 
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.textcenter{
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
 .img1 {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
+}
+
+.img2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .btn3 {
