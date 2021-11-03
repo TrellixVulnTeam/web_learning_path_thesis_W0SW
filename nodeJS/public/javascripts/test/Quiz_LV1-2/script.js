@@ -135,7 +135,7 @@ function loadNextQuestion() {
     container.style.display = "none";
     resultCont.style.display = "";
     resultCont.textContent = "Your Score:" + score;
-    document.getElementById("ref-link").innerHTML ='<center><a href="/lv3" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Next Level</a></center>';
+    document.getElementById("ref-link").innerHTML ='<center><a href="/lv3" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Next Level</a></center>';
     
     //alert(score);
     
