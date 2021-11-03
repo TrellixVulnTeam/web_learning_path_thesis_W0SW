@@ -1,10 +1,12 @@
 let value = `/* C demo code */
 
 #include <stdio.h>
-int main() {
-   // printf() displays the string inside quotation
-   printf("Hello, World!");
-   return 0;
+
+int main()
+{
+    int id = 1610900;
+    printf("Bangkok Unvercity %d", id);
+    return 0;
 }
 
 
