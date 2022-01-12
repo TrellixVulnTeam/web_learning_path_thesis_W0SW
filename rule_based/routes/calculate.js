@@ -45,7 +45,7 @@ router.get('/', function(req, res, next) {
   MongoClient.connect(url, function(err, db) {
     if (err) throw err;
     var dbo = db.db(mydatabase);
-    var query = { test1:true};
+    var query = { test1:true}; //did test1
     dbo.collection(mycollection).find(query).toArray(function(err, result) {
         if (err) throw err;
         
