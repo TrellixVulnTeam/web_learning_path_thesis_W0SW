@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb://localhost:27017/";
-var mydatabase = "king";
+var mydatabase = "King";
 
 /* get db page */
 router.post('/',function(req,res){
