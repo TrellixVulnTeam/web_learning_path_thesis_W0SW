@@ -63,17 +63,18 @@ router.get('/', function(req, res, next) {
         res.render('cal', 
             {
                 title:"Web to DB"
-                ,db_cal: 5555555555555
+                ,db_cal: sum
             });
         });
      });
-
 });
 
 module.exports = router;
 
 
 function newFunction(sum) {
-    console.log(sum);
+    console.log("\n################\n");
+    console.log("\t",sum);
+    console.log("\n################\n");
 }
 
