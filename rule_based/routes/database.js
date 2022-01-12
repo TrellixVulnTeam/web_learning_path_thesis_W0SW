@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb://localhost:27017/";
-var mydatabase = "king";
+var mydatabase = "ML";
 
 /* get db page */
 router.post('/',function(req,res){
@@ -35,7 +35,7 @@ router.post('/',function(req,res){
         option4: opt4,
         answer: ans
     };
-    var mycollection = "thesis";
+    var mycollection = "rule_based";
     MongoClient.connect(url, function(err, db) {
         if (err) throw err;
         var dbo = db.db(mydatabase);  
@@ -51,7 +51,7 @@ router.post('/',function(req,res){
 
 
 
-var mycollection = "thesis";
+var mycollection = "rule_based";
 
 /* query db page. */
 router.get('/', function(req, res, next) {
@@ -67,7 +67,7 @@ router.get('/', function(req, res, next) {
         console.log(result);
         console.log("##########################");
         db.close();
-        res.render('king', 
+        res.render('db', 
             {
                 title:"Web to DB"
                 ,db_date: dataResult.phone
