@@ -72,8 +72,7 @@ router.get('/', function(req, res, next) {
                 title:"Web to DB"
                 ,db_date: dataResult.phone
                 ,db_name: dataResult.name
-                ,db_age: dataResult.age
-                ,db_pic: dataResult.pic
+
             });
         });
      });
