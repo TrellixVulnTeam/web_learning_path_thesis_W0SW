@@ -6,23 +6,33 @@ var mydatabase = "ML";
 
 /* get db page */
 router.post('/',function(req,res){
-    var p1 = req.body.option1;
-    var p2 = req.body.option2;
-    var opt1 = parseFloat(p1);
-    var opt2 = parseFloat(p2);
+    var option = req.body.opt1;
+    let ans = parseFloat(req.body.ans1);
+    var view = req.body.view;
+   // var opt3 = Boolean(p3);
+ 
+    if(option == "test1"&& view != null){
+        var myobj = {
+            test1:ans
+            ,view:view
+        }
+    }
+    if(option == "test2" && view != null ){
+        var myobj = {
+            test2:ans
+            ,view:view
+        }
+    }
+
+    if(view == null ){
+        var myobj = {
+        }
+    }
+
 
    console.log("\n\n############### INSERT ###########\n\n");
-  
-//   console.log(adrrs);
-//   console.log(id);
 
-
-
-    var myobj = {
-        test1:true,
-        option1: opt1,
-        option2: opt2,
-    };
+    
     var mycollection = "rule_based";
     MongoClient.connect(url, function(err, db) {
         if (err) throw err;
@@ -45,20 +55,13 @@ router.get('/', function(req, res, next) {
   MongoClient.connect(url, function(err, db) {
     if (err) throw err;
     var dbo = db.db(mydatabase);
-    var query = { test1:true}; //did test1
+    //var query = { test1:true}; //did test1
+    var query = { test1:5};
     dbo.collection(mycollection).find(query).toArray(function(err, result) {
         if (err) throw err;
-        
-        let sum = 0;
-        for (let i = 0; i < result.length; i++) {
-            sum += result[i].option1;
-        }
-        newFunction(sum);
-                
-
-     //   console.log("\n\n############### Query ###########\n\n");
-      //  console.log(result);
-     //   console.log("##########################");
+     //   console.log(result);
+        let sum = sumFunction(result);
+    //    newFunction(sum);
         db.close();
         res.render('cal', 
             {
@@ -71,10 +74,17 @@ router.get('/', function(req, res, next) {
 
 module.exports = router;
 
-
 function newFunction(sum) {
     console.log("\n################\n");
     console.log("\t",sum);
     console.log("\n################\n");
 }
 
+function sumFunction(result) {
+
+    let sum = 0;
+        for (let i = 0; i < result.length; i++) {
+            sum += result[i].test1;
+        }
+  return sum;
+}
