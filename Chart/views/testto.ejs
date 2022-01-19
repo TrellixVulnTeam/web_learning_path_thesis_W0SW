@@ -2,68 +2,91 @@
 <html>
   <head>
     <title><%= title %></title>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
   </head>
 
 
-  
-
   <style>
-    .avatar {
-      vertical-align: middle;
-      width: 33%;
-      height: 33%;
-      border-radius: 88%;
+    .zc-body {
+      background-color: #fff;
     }
+ 
+    .chart--container {
+      width: 100%;
+      height: 100%;
+      min-height: 530px;
+    }
+ 
+    .zc-ref {
+      display: none;
+    }
+
     </style>
 
   <body>
-    <center>
-    <div class ="container" style="background-color: pink;">
-      <br><br>
-      <img src="https://p2.music.126.net/X-cZXMriax_IRAkKWTOozg==/109951165575050379.jpg" alt="Trulli" width="25%" height="25%" >
-      <br><br>
-    </div> 
-
-    <div class ="container" style="background-color: rgb(240, 101, 124);">
-      <br>
-      <p>Welcome to <h2><%= db_name %></h2></p>
-      <p>Age : <%= db_age %></p> 
-      <p>DATE : <%= db_date %></p> 
-      <img src='<%= db_pic %>' alt="Avatar" class="avatar" />
-      <br>
-
-      <br>
+    <div id="myChart" class="chart--container">
+      <a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a>
     </div>
-
-    <div class ="container" style="background-color: rgb(231, 206, 210);">
-      <br>
-      <form action="" method="post">
-    <!--
-        <label for="fname">ID:</label>
-        <input type="text" id="id" name="id" value=""><br><br>
-    -->
-        <label for="fname">question:</label>
-        <input type="text" id="question" name="question" value=""><br><br> 
-        <label for="fname">option1:</label>
-        <input type="text" id="option1" name="option1" value=""><br><br> 
-        <label for="fname">option2:</label>
-        <input type="text" id="option2" name="option2" value=""><br><br> 
-        <label for="lname">option3:</label>
-        <input type="text" id="option3" name="option3"><br><br>
-        <label for="lname">option4:</label>
-        <input type="text" id="option4" name="option4"><br><br>
-        <label for="lname">answer:</label>
-        <input type="text" id="answer" name="answer"><br><br>
-        
-        <!--
-        <label for="lname">answer:</label><br>
-        <textarea id="addr" name="addr" class="form-control" style="width: 90%; height: 50px;resize:both "></textarea><br><br>
-        -->
-        <input type="submit" value="Submit" class="btn btn-primary">
-      </form>
-      <br>
-    </div> 
-     
-    </center>
+    <script>
+      ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
+      var myConfig = {
+        type: 'radar',
+        plot: {
+          aspect: 'area',
+          animation: {
+            effect: 3,
+            sequence: 1,
+            speed: 700
+          }
+        },
+        scaleV: {
+          visible: false
+        },
+        scaleK: {
+          values: '0:3:1',
+          labels: ['Basic', 'Tracing', 'Explaining', 'Writing'],
+          item: {
+            fontColor: '#607D8B',
+            backgroundColor: "white",
+            borderColor: "#aeaeae",
+            borderWidth: 1,
+            padding: '5 10',
+            borderRadius: 10
+          },
+          refLine: {
+            lineColor: '#c10000'
+          },
+          tick: {
+            lineColor: '#59869c',
+            lineWidth: 2,
+            lineStyle: 'dotted',
+            size: 20
+          },
+          guide: {
+            lineColor: "#607D8B",
+            lineStyle: 'solid',
+            alpha: 0.3,
+            backgroundColor: "#c5c5c5 #718eb4"
+          }
+        },
+        series: [{
+            values: [50, 39, 38, 19],
+            text: 'farm'
+          },
+          {
+            values: [20, 20, 54, 41],
+            lineColor: '#53a534',
+            backgroundColor: '#689F38'
+          }
+        ]
+      };
+   
+      zingchart.render({
+        id: 'myChart',
+        data: myConfig,
+        height: '100%',
+        width: '100%'
+      });
+    </script>
   </body>
 </html>
