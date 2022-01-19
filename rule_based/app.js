@@ -7,6 +7,8 @@ var logger = require('morgan');
 
 var databaseRouter = require('./routes/database');
 var calRouter = require('./routes/calculate');
+var chartRouter = require('./routes/chart');
+
 
 
 var app = express();
@@ -23,6 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', databaseRouter);
 app.use('/cal', calRouter);
+app.use('/chart', chartRouter);
 
 
 
