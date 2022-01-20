@@ -6,11 +6,12 @@ var mydatabase = "ML";
 
 
 var mycollection = "rule_based";
-
 /* query db page. */
 router.get('/', function(req, res, next) {
     res.render('chart', 
             {
+
+                
  //               title:"Web to DB"
   //              ,db_cal:"S"
             });
@@ -37,6 +38,11 @@ router.get('/', function(req, res, next) {
      });
 });
 */
+
+
+
+
+
 
 
 module.exports = router;
