@@ -5,4 +5,13 @@ body {
 
 a {
   color: #00B7FF;
+  font-size: 20px;
+}
+
+img {
+  border-radius: 50%;
+}
+
+p {
+	font-size: 25px;
 }
