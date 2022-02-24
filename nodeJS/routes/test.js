@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb://localhost:27017/";
-var mydatabase = "ML";
+var mydatabase = "DB_Test";
 /* query db page. */
 
 Query_LV1();
@@ -11,7 +11,7 @@ module.exports = router;
 
 function Query_LV1(){
     router.get('/', function(req, res, next) { 
-        var mycollection = "ans";
+        var mycollection = "Ans_Lv1";
         MongoClient.connect(url, function(err, db) {
             if (err) throw err;
             var dbo = db.db(mydatabase);
@@ -21,7 +21,7 @@ function Query_LV1(){
                 let did_ans = result.length;
                 db.close();
 
-                var mycollection = "Lv1";
+                var mycollection = "Content_Lv1";
                 MongoClient.connect(url, function(err, db) {
                     if (err) throw err;
                     var dbo = db.db(mydatabase);
@@ -35,16 +35,18 @@ function Query_LV1(){
                         }
                         else{
                             let question1 = number.question;
-                            let Q1A1 = number.ans1;
-                            let Q1A2 = number.ans2;
-                            let Q1A3 = number.ans3;
-                            let Q1R =  number.check;
+                            let Q1A1 = number.opt1;
+                            let Q1A2 = number.opt2;
+                            let Q1A3 = number.opt3;
+                            let Q1R =  number.ans;
                             let no =  number.no;
                             let level = number.lv;
+                            let pic = number.pic;
                             db.close();
                             res.render('test/lv1', 
                                 {
                                 question:question1,
+                                pic:pic,
                                 ans1:Q1A1,
                                 ans2:Q1A2,
                                 ans3:Q1A3,
@@ -70,6 +72,12 @@ function Push_data(){
         var test_lv = req.body.test_lv;
         var no = req.body.no;    
         var user = "Student1";
+console.log("\t\t\n ###### \n")
+        
+        console.log(ans);
+        console.log(ansR);
+
+console.log("\t\t\n ********* \n")
 
         if (ans === ansR){
             myobj = {
@@ -91,7 +99,7 @@ function Push_data(){
             }       
         }
 
-        var mycollection = "ans";
+        var mycollection = "Ans_Lv1";
         MongoClient.connect(url, function(err, db) {
           if (err) throw err;
           var dbo = db.db(mydatabase);  
