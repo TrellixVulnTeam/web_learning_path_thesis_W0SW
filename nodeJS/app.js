@@ -15,7 +15,9 @@ var eLearningRouter = require('./routes/e-learning');
 var settingRouter = require('./routes/setting');
 var achievementRouter = require('./routes/achievement');
 var projectRouter = require('./routes/project');
-var testRouter = require('./routes/test');
+var test1Router = require('./routes/test_1');
+var test2Router = require('./routes/test_2');
+var test3Router = require('./routes/test_3');
 
 var popupRouter = require('./routes/popup');
 var dbRouter = require('./routes/db');
@@ -53,7 +55,9 @@ app.use('/achievement',achievementRouter);
 app.use('/project', projectRouter);
 
 app.use('/popup', popupRouter);
-app.use('/test', testRouter);
+app.use('/test1', test1Router);
+app.use('/test2', test2Router);
+app.use('/test3', test3Router);
 
 app.use('/db', dbRouter);
 
