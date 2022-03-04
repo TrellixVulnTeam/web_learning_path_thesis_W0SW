@@ -18,6 +18,7 @@ var projectRouter = require('./routes/project');
 var test1Router = require('./routes/test_1');
 var test2Router = require('./routes/test_2');
 var test3Router = require('./routes/test_3');
+var test4Router = require('./routes/test_4');
 
 var popupRouter = require('./routes/popup');
 var dbRouter = require('./routes/db');
@@ -58,6 +59,7 @@ app.use('/popup', popupRouter);
 app.use('/test1', test1Router);
 app.use('/test2', test2Router);
 app.use('/test3', test3Router);
+app.use('/test4', test4Router);
 
 app.use('/db', dbRouter);
 
