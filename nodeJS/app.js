@@ -15,13 +15,12 @@ var eLearningRouter = require('./routes/e-learning');
 var settingRouter = require('./routes/setting');
 var achievementRouter = require('./routes/achievement');
 var projectRouter = require('./routes/project');
+var test1Router = require('./routes/test_1');
+var test2Router = require('./routes/test_2');
+var test3Router = require('./routes/test_3');
+var test4Router = require('./routes/test_4');
 
 var popupRouter = require('./routes/popup');
-var quiz_1iRouter = require('./routes/quiz/quiz_1');
-var quiz_3iRouter = require('./routes/quiz/quiz_3');
-var quiz_4iRouter = require('./routes/quiz/quiz_4');
-var MiniProjectRouter = require('./routes/quiz/TestMiniProject');
-
 var dbRouter = require('./routes/db');
 
 
@@ -57,10 +56,10 @@ app.use('/achievement',achievementRouter);
 app.use('/project', projectRouter);
 
 app.use('/popup', popupRouter);
-app.use('/LV1', quiz_1iRouter);
-app.use('/LV3', quiz_3iRouter);
-app.use('/LV4', quiz_4iRouter);
-app.use('/miniproject', MiniProjectRouter);
+app.use('/test1', test1Router);
+app.use('/test2', test2Router);
+app.use('/test3', test3Router);
+app.use('/test4', test4Router);
 
 app.use('/db', dbRouter);
 

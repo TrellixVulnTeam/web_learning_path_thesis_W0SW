@@ -1,14 +1,29 @@
 const draggableList = document.getElementById("draggable-list");
 const check = document.getElementById("check");
 
-const richestPeople = [
-  "สร้างฟังก์ชั่น main",
-  "กำหนดตัวแปร int a = 3",
-  "กำหนดตัวแปร int b = 2",
-  "แสดงข้อความ Hello World!",
-  "แสดงข้อความ ผลลัพธ์จากตัวแปร a + b",
-  "จบฟังก์ชั่น",
-];
+
+
+
+var data =  [
+  {
+  "opt":["1","2","3","4"]
+  ,"pic" :"https://i.redd.it/mwljue1r4sk11.jpg"
+  },
+  {
+    "opt":["2","3","4","5","6","7"]
+    ,"pic" :"https://i.pinimg.com/originals/c9/ab/e0/c9abe069c0455fadb2bc0378a78ee77d.jpg"
+  }
+]
+
+const no = data[0];
+const richestPeople = no.opt;
+    var img = document.createElement("img");
+    img.src = no.pic;
+    img.style.width = "50%";
+    img.style.height = "50%";
+    var div = document.getElementById("x");
+    div.appendChild(img);
+    
 
 const listItems = [];
 
@@ -70,12 +85,23 @@ function swapItems(fromIndex, toIndex) {
 function checkOrder() {
   listItems.forEach((listItem, index) => {
     const personName = listItem.querySelector(".draggable").innerText.trim();
-    if (personName !== richestPeople[index]) listItem.classList.add("wrong");
+    if (personName !== richestPeople[index]) {
+      listItem.classList.add("wrong");
+    }
     else {
       listItem.classList.remove("wrong");
       listItem.classList.add("right");
     }
+    //document.getElementById("demo").innerHTML = listItem.classList;
+
+
+    //field
+
+    document.getElementById('result').value = listItem.classList;  //send result.
+
   });
+
+  
 }
 
 // Event Listeners
@@ -94,6 +120,7 @@ function addListeners() {
 }
 
 check.addEventListener("click", checkOrder);
+
 
 // Init
 createList();
