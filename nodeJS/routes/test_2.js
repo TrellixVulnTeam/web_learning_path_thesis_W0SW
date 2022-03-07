@@ -31,7 +31,7 @@ function Query_LV1(){
                         let totol_ans = result.length;
                         let number = result[did_ans];
                         if((did_ans) == totol_ans){
-                            db.close();res.redirect('/home');
+                            db.close();res.redirect('/test3');
                         }
                         else{
                             let question1 = number.question;

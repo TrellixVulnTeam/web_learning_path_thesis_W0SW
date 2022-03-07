@@ -23,6 +23,7 @@ var test4Router = require('./routes/test_4');
 var popupRouter = require('./routes/popup');
 var dbRouter = require('./routes/db');
 
+var ideRouter = require('./routes/compiler');
 
 
 /////////////////////
@@ -61,8 +62,9 @@ app.use('/test2', test2Router);
 app.use('/test3', test3Router);
 app.use('/test4', test4Router);
 
-app.use('/db', dbRouter);
 
+app.use('/db', dbRouter);
+app.use('/ide', ideRouter);
 
 
 //app.use(express.static('public'));
